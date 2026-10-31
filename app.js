@@ -52,7 +52,7 @@
   const nameOf = p => (LANG === "ru" ? p.name_ru : LANG === "ir" ? (p.name_ir || p.name) : (p.name_en || p.name)) || p.name;
 
   /* ---------- base style ---------- */
-  const BASE = new URL(".", document.baseURI).href;   // document.baseURI: tools/editor.html loads this page from the site root
+  const BASE = new URL(".", document.baseURI).href;   // document.baseURI: the editor loads this page from the site root
   const C = {
     land: "#f2efe7", water: "#aad3e8", waterLine: "#8cc2de", wood: "#d6e6c6", grass: "#e4ecd3", sand: "#efe5c9", ice: "#f7fbfd",
     farm: "#eceee0", res: "#e8e2d8", park: "#d4e8c2", building: "#ddd5ca", motorway: "#f4b860", motorwayCase: "#d6923a",
@@ -145,7 +145,7 @@
   /* ---------- data ---------- */
   const D = { places: [], feats: [], routes: [], irad: null, zones: null, districts: null, reviews: {}, labels: {} };
   const DEMO = new URLSearchParams(location.search).has("demo");    // ?demo: sample businesses and reviews to preview the cards
-  const EDIT = !!window.KT_EDIT;     // set by tools/editor.html: no place cards on click, the editor handles the map
+  const EDIT = !!window.KT_EDIT;     // set by the editor: no place cards on click, the editor handles the map
   const get = u => fetch(u).then(r => r.json());
 
   const GROUP = {
