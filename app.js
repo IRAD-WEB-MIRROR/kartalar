@@ -55,10 +55,14 @@
   const BASE = new URL(".", document.baseURI).href;   // document.baseURI: the editor loads this page from the site root
   const C = {
     land: "#f2efe7", water: "#aad3e8", waterLine: "#8cc2de", wood: "#d6e6c6", grass: "#e4ecd3", sand: "#efe5c9", ice: "#f7fbfd",
-    farm: "#eceee0", res: "#e8e2d8", park: "#d4e8c2", building: "#ddd5ca", motorway: "#f4b860", motorwayCase: "#d6923a",
-    primary: "#fbd98f", primaryCase: "#d9b56a", road: "#ffffff", roadCase: "#d8d2c6", rail: "#9a958c",
+    farm: "#eceee0", res: "#e8e2d8", park: "#d4e8c2", building: "#ddd5ca",
+    primary: "#f7cf6e", primaryCase: "#d2a64a", road: "#ffffff", roadCase: "#d8d2c6", rail: "#9a958c",
     border: "#5a3d79", borderHalo: "#c9b6e3", qarachik: "#b23a2a", outside: "#e6e3dc", text: "#2c2a26", halo: "#ffffff"
   };
+  // one style for every major road (Irad highways and roads, and real motorways, trunk and primary roads): yellow,
+  // one width; streets and minor roads are white
+  const MAJOR_W = ["interpolate", ["linear"], ["zoom"], 5, 1, 9, 2.4, 12, 4.5, 16, 13];
+  const MAJOR_CASE_W = ["interpolate", ["linear"], ["zoom"], 5, 1.6, 9, 3.6, 12, 6.5, 16, 16];
   // all base-map data is our own: tiles/*.pmtiles, read through vendor/kt-pmtiles.js (protocol kt://)
   const style = {
     version: 8,
@@ -92,9 +96,8 @@
       { id: "road-track", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12, filter: ["in", ["get", "class"], ["literal", ["track", "path"]]], paint: { "line-color": "#c9bfa9", "line-dasharray": [2, 2], "line-width": 1 } },
       { id: "road-mid-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 9, filter: ["in", ["get", "class"], ["literal", ["secondary", "tertiary"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 9, 1, 16, 14] } },
       { id: "road-mid", type: "line", source: "lines", "source-layer": "transportation", minzoom: 8, filter: ["in", ["get", "class"], ["literal", ["secondary", "tertiary"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.5, 16, 12] } },
-      { id: "road-primary-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 7, filter: ["in", ["get", "class"], ["literal", ["primary", "trunk"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.primaryCase, "line-width": ["interpolate", ["linear"], ["zoom"], 7, 1.2, 16, 18] } },
-      { id: "road-primary", type: "line", source: "lines", "source-layer": "transportation", minzoom: 6, filter: ["in", ["get", "class"], ["literal", ["primary", "trunk"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.primary, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.6, 16, 15] } },
-      { id: "road-motorway", type: "line", source: "lines", "source-layer": "transportation", minzoom: 5, filter: ["==", ["get", "class"], "motorway"], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.motorway, "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.8, 16, 18] } },
+      { id: "road-primary-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 7, filter: ["in", ["get", "class"], ["literal", ["primary", "trunk", "motorway"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.primaryCase, "line-width": MAJOR_CASE_W } },
+      { id: "road-primary", type: "line", source: "lines", "source-layer": "transportation", minzoom: 6, filter: ["in", ["get", "class"], ["literal", ["primary", "trunk", "motorway"]]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.primary, "line-width": MAJOR_W } },
       { id: "rail-disused", type: "line", source: "lines", "source-layer": "transportation", minzoom: 10, filter: ["all", ["==", ["get", "class"], "rail"], ["has", "disused"]], paint: { "line-color": "#b9b2a6", "line-dasharray": [4, 3], "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.6, 16, 2] } },
       { id: "rail", type: "line", source: "lines", "source-layer": "transportation", minzoom: 9, filter: ["all", ["==", ["get", "class"], "rail"], ["!", ["has", "disused"]]], paint: { "line-color": C.rail, "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.8, 16, 3] } },
       { id: "rail-dash", type: "line", source: "lines", "source-layer": "transportation", minzoom: 11, filter: ["all", ["==", ["get", "class"], "rail"], ["!", ["has", "disused"]]], paint: { "line-color": "#ffffff", "line-dasharray": [3, 3], "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.6, 16, 2] } },
@@ -123,9 +126,9 @@
       { id: "city-mid", type: "line", source: "detail", "source-layer": "city", minzoom: 9.5, filter: ["==", ["get", "k"], "mid"], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 9.5, 0.5, 16, 12] } },
       { id: "city-major-case", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "k"], "major"], layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": C.primaryCase, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 1.2, 16, 18] } },
+        paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 1, 16, 15] } },
       { id: "city-major", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "k"], "major"], layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": C.primary, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 0.6, 16, 15] } }
+        paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 0.5, 16, 13] } }
     ]
   };
 
@@ -260,9 +263,10 @@
       // our routes: shown at regional zooms, fading out once real streets take over
       { id: "infra", type: "line", source: "routes", minzoom: 6, filter: ["in", ["get", "kind"], ["literal", ["pipeline", "canal", "power-line"]]], layout: { visibility: "none" },
         paint: { "line-color": ["match", ["get", "kind"], "pipeline", "#3f8a3f", "canal", "#3f9fd8", "#9c79b4"], "line-width": 1.4, "line-dasharray": [2, 1.5] }, _g: "infra" },
+      { id: "route-road-case", type: "line", source: "routes", filter: ["in", ["get", "kind"], ["literal", ["highway", "road"]]], layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": C.primaryCase, "line-width": MAJOR_CASE_W }, _g: "routes" },
       { id: "route-road", type: "line", source: "routes", filter: ["in", ["get", "kind"], ["literal", ["highway", "road"]]], layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": ["match", ["get", "kind"], "highway", "#e39a32", "#efbe63"], "line-width": ["interpolate", ["linear"], ["zoom"], 5, ["match", ["get", "kind"], "highway", 1.8, 1], 9, ["match", ["get", "kind"], "highway", 3.2, 2], 14, ["match", ["get", "kind"], "highway", 7, 5]],
-          "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.95, 13, 0.6] }, _g: "routes" },
+        paint: { "line-color": C.primary, "line-width": MAJOR_W }, _g: "routes" },
       { id: "route-rail", type: "line", source: "routes", filter: ["==", ["get", "kind"], "railway"], paint: { "line-color": "#5a5650", "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1, 9, 2, 14, 3] }, _g: "routes" },
       { id: "route-rail-dash", type: "line", source: "routes", minzoom: 6.5, filter: ["==", ["get", "kind"], "railway"], paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.5, 9, 1, 14, 1.6], "line-dasharray": [3, 3] }, _g: "routes" },
       { id: "route-tunnel", type: "line", source: "routes", minzoom: 7, filter: ["==", ["get", "kind"], "tunnel"], paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 7, 1.5, 12, 3.5], "line-dasharray": [1.2, 1.2] }, _g: "routes" },
