@@ -307,6 +307,22 @@
   "wiki": "NurGaz Worker Housing Complex"
  },
  {
+  "id": "nurzhan-aeroport",
+  "name": "Aeroport",
+  "name_ru": "Аэропорт",
+  "name_en": "Aeroport",
+  "kind": "quarter",
+  "zone": "ISEZ",
+  "district": "Nurzhan",
+  "lat": 43.6745,
+  "lon": 73.6765,
+  "pop": null,
+  "elev": null,
+  "confidence": "placed",
+  "note": "District on the north-western edge of the city on the road to the old Kobozev Airport, whose name it keeps; marshrutka terminus.",
+  "wiki": null
+ },
+ {
   "id": "iyik-janyl-cathedral-hill",
   "name": "Cathedral Hill",
   "name_ru": "Соборный холм",
