@@ -135680,5 +135680,73 @@
   "max_elev_m": 1100,
   "crossing_name": "Kök-Kamar",
   "crossing_name_ru": "Кёк-Камар"
+ },
+ {
+  "id": "nurzhan-depot-siding-14",
+  "name": "Siding No. 14 (Nurzhan freight depot)",
+  "name_ir": "No. 14 jol (Nurzhan jük bazasy)",
+  "name_ru": "Подъездной путь № 14 (Нуржанская грузовая станция)",
+  "kind": "railway",
+  "note": "Siding on the east side of the Nurzhan freight depot serving the Trans-Chuy bonded terminal and its customs post; gantry crane over the track since September 2026.",
+  "coords": [
+   [
+    73.78349,
+    43.626
+   ],
+   [
+    73.78442,
+    43.62645
+   ],
+   [
+    73.78508,
+    43.62721
+   ],
+   [
+    73.78754,
+    43.63033
+   ],
+   [
+    73.7881,
+    43.63113
+   ],
+   [
+    73.78816,
+    43.63194
+   ]
+  ],
+  "length_km_drawn": 0.78,
+  "length_km": 0.8
+ },
+ {
+  "id": "talas-north-terminal-road",
+  "name": "Terminal Road",
+  "name_ir": "Terminal köchösü",
+  "name_ru": "Терминальная улица",
+  "kind": "road",
+  "note": "Road from the Trans-Talas Highway into the Talas North Terminal, past the bonded warehouses.",
+  "coords": [
+   [
+    70.0125,
+    42.5243
+   ],
+   [
+    70.0105,
+    42.5275
+   ],
+   [
+    70.0088,
+    42.5308
+   ],
+   [
+    70.0072,
+    42.5335
+   ],
+   [
+    70.0062,
+    42.5348
+   ]
+  ],
+  "length_km_drawn": 1.28,
+  "length_km": 1.3
  }
 ]

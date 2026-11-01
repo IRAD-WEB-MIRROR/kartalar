@@ -1,1 +1,46 @@
-[]
+[
+ {
+  "id": "trans-chuy-terminal-services-talas-north",
+  "name": "Trans-Chuy Terminal Services (bonded warehouses)",
+  "name_en": "Trans-Chuy Terminal Services (bonded warehouses)",
+  "name_ru": "«Транс-Чуй Терминал Сервисез» (таможенные склады)",
+  "kind": "terminal",
+  "city": "Talas North Terminal",
+  "zone": "ISEZ",
+  "lat": 42.5322,
+  "lon": 70.0086,
+  "address": "9 Terminal Road, Talas North Terminal",
+  "hours": {
+   "mo": "08:00-18:00",
+   "tu": "08:00-18:00",
+   "we": "08:00-18:00",
+   "th": "08:00-18:00",
+   "fr": "08:00-18:00",
+   "sa": "09:00-13:00",
+   "su": "closed"
+  },
+  "note": "Office of Trans-Chuy Terminal Services LLC and its bonded warehouses at the frontier terminal."
+ },
+ {
+  "id": "trans-chuy-bonded-terminal-nurzhan",
+  "name": "Trans-Chuy bonded terminal (customs)",
+  "name_en": "Trans-Chuy bonded terminal (customs)",
+  "name_ru": "Таможенный терминал «Транс-Чуй»",
+  "kind": "terminal",
+  "city": "Nurzhan",
+  "zone": "ISEZ",
+  "lat": 43.62864,
+  "lon": 73.78664,
+  "address": "Siding No. 14, Nurzhan freight depot",
+  "hours": {
+   "mo": "08:00-20:00",
+   "tu": "08:00-20:00",
+   "we": "08:00-20:00",
+   "th": "08:00-20:00",
+   "fr": "08:00-20:00",
+   "sa": "08:00-20:00",
+   "su": "08:00-20:00"
+  },
+  "note": "Bonded terminal on siding No. 14 with a customs post; gantry crane over the siding since September 2026. Lorries enter by gate 2."
+ }
+]
