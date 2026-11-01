@@ -270,6 +270,21 @@
   "wiki": null
  },
  {
+  "id": "hyatt-regency-talas",
+  "name": "Hyatt Regency Talas",
+  "name_ir": "Hyatt Regency Talas",
+  "name_ru": "Хаятт Ридженси Талас",
+  "kind": "landmark",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.5201,
+  "lon": 72.2467,
+  "elev": 1250,
+  "confidence": "placed",
+  "note": "International hotel in the Soviet centre, across the avenue from the Opera and Ballet Theater; foreign delegations, base contractors and business visitors stay here.",
+  "wiki": null
+ },
+ {
   "id": "talas-drama-theatre",
   "name": "Talas State Academic Drama Theatre",
   "name_ir": "Talas Mamlekettik Akademiyalyk Drama Teatry",
