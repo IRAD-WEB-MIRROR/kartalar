@@ -627,12 +627,13 @@
   "kind": "station",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.5076,
+  "lat": 42.5063,
   "lon": 72.236,
   "elev": 1248,
   "confidence": "placed",
   "note": "Terminus of the Talas branch of Irad Temir Jolu; daily passenger train to Nurzhan (~7 h by the lowland route).",
-  "wiki": "Transport in Irad"
+  "wiki": "Transport in Irad",
+  "locked": true
  },
  {
   "id": "silk-road-arena",
@@ -902,12 +903,13 @@
   "kind": "school",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.49648,
-  "lon": 72.28751,
+  "lat": 42.49267,
+  "lon": 72.29301,
   "elev": 1290,
   "confidence": "placed",
-  "note": "US-curriculum school (1994); placed by the Alatau Heights returnee suburb SE of the centre.",
-  "wiki": null
+  "note": "US-curriculum school (1994); outside the north gate of Alatau Heights, the returnee suburb SE of the centre.",
+  "wiki": null,
+  "locked": true
  },
  {
   "id": "talas-youth-soccer-academy",
@@ -1206,12 +1208,13 @@
   "kind": "market",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.52407,
-  "lon": 72.15962,
+  "lat": 42.50468,
+  "lon": 72.13183,
   "elev": 1242,
   "confidence": "placed",
-  "note": "Weekend livestock market on the western edge near the TAEZ; separate horse section.",
-  "wiki": "Talas Central Cattle Mart"
+  "note": "Weekend livestock market on the western edge near the TAEZ, beside the Sary-Bulak spur (its own loading sidings) and the Lienzo Charro de Semiz; separate horse section.",
+  "wiki": "Talas Central Cattle Mart",
+  "locked": true
  },
  {
   "id": "semiz-church-st-yusup",
