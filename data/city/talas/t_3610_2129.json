@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"k":"minor","t":"road"},"geometry":{"type":"LineString","coordinates":[[72.21504,42.58056],[72.21514,42.58011],[72.21522,42.57765]]}}]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"k":"minor","t":"road"},"geometry":{"type":"LineString","coordinates":[[72.20479,42.58253],[72.2062,42.57424],[72.20651,42.57293]]}}]}

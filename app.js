@@ -114,6 +114,7 @@
       { id: "city-ditch", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["==", ["get", "k"], "ditch"]], minzoom: 14, paint: { "line-color": C.waterLine, "line-width": 1 } },
       { id: "city-building", type: "fill", source: "detail", "source-layer": "city", minzoom: 13, filter: ["==", ["get", "t"], "building"],
         paint: { "fill-color": ["case", ["has", "tall"], "#d3c9bc", C.building], "fill-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14.5, 0.9] } },
+      { id: "city-wall", type: "line", source: "detail", "source-layer": "city", minzoom: 15, filter: ["==", ["get", "t"], "wall"], paint: { "line-color": "#a08a6c", "line-width": ["interpolate", ["linear"], ["zoom"], 15, 1, 18, 3] } },
       { id: "city-path", type: "line", source: "detail", "source-layer": "city", minzoom: 15, filter: ["==", ["get", "k"], "path"], paint: { "line-color": "#c9bfa9", "line-dasharray": [2, 2], "line-width": 1 } },
       { id: "city-minor-case", type: "line", source: "detail", "source-layer": "city", minzoom: 12.5, filter: ["in", ["get", "k"], ["literal", ["minor", "service"]]], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 12.5, 1, 16, ["match", ["get", "k"], "service", 6, 10]] } },
