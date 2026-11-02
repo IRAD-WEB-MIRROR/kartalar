@@ -164,8 +164,8 @@
   const get = u => fetch(u).then(r => r.json());
 
   const GROUP = {
-    food: ["restaurant", "cafe", "chaikhana", "fast-food", "bakery", "bar"], stay: ["hotel", "guesthouse", "hostel"], shops: ["shop", "grocery", "supermarket", "mall", "bank", "pharmacy", "fuel"],
-    worship: ["church", "mosque", "mazar"], civic: ["government", "university", "school", "hospital", "museum", "un"],
+    food: ["restaurant", "cafe", "chaikhana", "fast-food", "bakery", "bar"], stay: ["hotel", "guesthouse", "hostel"], shops: ["shop", "grocery", "supermarket", "mall", "bank", "pharmacy", "fuel", "office"],
+    worship: ["church", "mosque", "mazar"], civic: ["government", "university", "school", "education", "hospital", "museum", "un"],
     leisure: ["stadium", "hippodrome", "market"], transport: ["airport", "station", "bus-station", "terminal"], crossing: ["border-crossing", "checkpoint"],
     industry: ["dam", "power", "mine", "industry", "oilfield"], nature: ["peak", "pass", "lake", "reservoir", "river-point", "spring", "park", "river", "canal", "glacier", "range", "valley", "desert"],
     heritage: ["ruins", "heritage", "landmark"], military: ["military"]
@@ -542,7 +542,7 @@
 
   // reviews: data/reviews.json {place id: [{author, date, stars, text, lang, guide, reply: {text, date}}]}
   function revOf(p) {
-    const list = (D.reviews[p.id] || []).slice();
+    const list = (D.reviews[p.id] || []).filter(r => !r.hidden);
     const n = p.reviews_count || list.length;
     const avg = p.rating || (list.length ? list.reduce((a, r) => a + r.stars, 0) / list.length : 0);
     return { list, n, avg };
@@ -551,7 +551,8 @@
   // opening hours: {mo: "09:00-22:00", ..., su: "closed"}, Irad time (UTC+6)
   const DAYS = ["su", "mo", "tu", "we", "th", "fr", "sa"];
   function iradNow() { const d = new Date(Date.now() + 6 * 3600e3); return { day: d.getUTCDay(), min: d.getUTCHours() * 60 + d.getUTCMinutes() }; }
-  function openState(h) {
+  function openState(h, p) {
+    if (p && p.closed === "permanently") return { open: false, txt: t("closedPerm") };
     if (!h) return null;
     const { day, min } = iradNow(), v = h[DAYS[day]];
     if (!v || v === "closed") return { open: false, txt: t("closedToday") };
@@ -605,7 +606,7 @@
     const city = p._t === "feat" ? [qu, locName(p.city, true)].filter(Boolean).join(", ") : "";
     const dist = p.district && p.district !== p.name && p.kind !== "district" ? (p._t === "place" ? locName(p.district) : "") : "";
     const where = p.address || [city, dist, zone].filter(Boolean).join(" · ");
-    const { list, n, avg } = revOf(p), os = openState(p.hours);
+    const { list, n, avg } = revOf(p), os = openState(p.hours, p);
     // overview rows
     const rows = [];
     rows.push(row("pin", `${esc(where || t("irad"))}${p.address && (city || zone) ? `<small>${esc([city, zone].filter(Boolean).join(" · "))}</small>` : ""}`));

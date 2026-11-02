@@ -796,7 +796,10 @@
   "elev": 1255,
   "confidence": "placed",
   "note": "Main referral and teaching hospital of the ISEZ (opened 1954, rebuilt 1995-2002).",
-  "wiki": "Talas Regional Hospital Medical Complex"
+  "wiki": "Talas Regional Hospital Medical Complex",
+  "web": "https://rh.health.iradgov.org/",
+  "phone": "+996-39-2-26-10-00",
+  "address": "21 Hospital Boulevard, Talas"
  },
  {
   "id": "talas-municipal-hospital-1",
