@@ -3035,9 +3035,9 @@
   "kind": "other",
   "city": null,
   "zone": "ATR",
-  "lat": 42.325,
-  "lon": 71.74,
-  "elev": 2090,
+  "lat": 42.3262,
+  "lon": 71.7388,
+  "elev": 2060,
   "confidence": "placed",
   "note": "Weather station (1936, automated 2011) near the Kenkol Pass on the ISEZ side.",
   "wiki": "Kenkol Mountain Meteorological Post"
@@ -5499,11 +5499,11 @@
   "kind": "pass",
   "city": null,
   "zone": "ATR",
-  "lat": 42.57962,
-  "lon": 72.80525,
-  "elev": 2670,
+  "lat": 42.579,
+  "lon": 72.8068,
+  "elev": 2750,
   "confidence": "placed",
-  "note": "Paved 2,670 m road pass across the western Kyrgyz Range, short summer route Talas-Chu; often closed in winter; snowplough depot at Toguz-Bulak.",
+  "note": "Paved 2,750 m road pass across the western Kyrgyz Range, short summer route Talas-Chu; often closed in winter; snowplough depot at Toguz-Bulak.",
   "wiki": "Kök-Bel Pass"
  },
  {
