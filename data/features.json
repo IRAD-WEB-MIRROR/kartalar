@@ -6522,6 +6522,22 @@
   "status": "line"
  },
  {
+  "id": "qarachik-crossing-kerben-road",
+  "name": "Kerben road crossing",
+  "name_ir": "Kerben jolu ötkölü",
+  "name_ru": "КПП «Кербен»",
+  "kind": "checkpoint",
+  "city": null,
+  "zone": "ISEZ",
+  "lat": 41.48138,
+  "lon": 72.22915,
+  "elev": 900,
+  "confidence": "placed",
+  "note": "Qara-Chik line crossing on the Kerben road where it tops the crest ~8 km north of Iyık Janyl (southern sector): Gendarmerie checkpoint on the ISEZ side, El-Choro post on the tribal side; minor, used by Kerben and Chatkal foothill families, herders bound for the Iyık Janyl bazaar and pilgrims.",
+  "wiki": "Qara-Chik Demarcation Line",
+  "status": "line"
+ },
+ {
   "id": "talas-herald-newsroom",
   "name": "Talas Herald (Herald House)",
   "name_ir": "Talas Jarchysy",
