@@ -151,7 +151,7 @@
         paint: { "fill-color": ["match", ["get", "class"], "process", "#d9d3db", "tankyard", "#ddd8de", "basin", C.water, "ash", "#cfd2cf", "coal", "#a9a39b",
           "substation", "#dcd6cc", "plaza", "#e9e4da", "parking", "#e4e0da", "construction", "#ece6d6", "flare", "#e8dcd6", "yard", "#e2dccf",
           "dump", "#cdc3b1", "tailings", "#dcdbd0", "quarry", "#d9d1c4", "dam", "#a29c90", "pitch", "#cfe5c0", "stadium", "#dfe7d5", "park", C.park,
-          "military", "#ebdfdb", "wellpad", "#b9ac95", "#e3dbe6"] } },
+          "military", "#ebdfdb", "wellpad", "#b9ac95", "ruins", "#ddd2bb", "#e3dbe6"] } },
       { id: "site-road-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
         layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 12.5, 1, 16, ["match", ["get", "class"], "tertiary", 12, 6]] } },
       { id: "site-road", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
