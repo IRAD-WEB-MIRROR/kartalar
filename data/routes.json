@@ -6176,7 +6176,8 @@
     41.393
    ]
   ],
-  "snapped": "lore"
+  "snapped": "lore",
+  "style": "street"
  },
  {
   "id": "irad-temir-jolu-chu-line",
@@ -101436,46 +101437,6 @@
   "kind": "road",
   "note": "Regional road continuing State Route 1 down the Naryn past Kapka-Tash and the lower cascade stations to the Kyzyl-Jar crossing facing Uchkurgan; passenger traffic, lorries cross at Kyzyl-Tuu.",
   "coords": [
-   [
-    72.22112,
-    41.34847
-   ],
-   [
-    72.22553,
-    41.35158
-   ],
-   [
-    72.22634,
-    41.35138
-   ],
-   [
-    72.23072,
-    41.35177
-   ],
-   [
-    72.23172,
-    41.35157
-   ],
-   [
-    72.23476,
-    41.35475
-   ],
-   [
-    72.2357,
-    41.358
-   ],
-   [
-    72.23336,
-    41.36208
-   ],
-   [
-    72.23279,
-    41.36859
-   ],
-   [
-    72.23318,
-    41.36878
-   ],
    [
     72.23658,
     41.36853

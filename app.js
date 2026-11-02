@@ -242,7 +242,7 @@
     map.addSource("districts", { type: "geojson", data: D.districts });
     map.addSource("qarachik", { type: "geojson", data: D.line });
     map.addSource("rwz", { type: "geojson", data: D.rwz });
-    map.addSource("routes", { type: "geojson", data: fc(D.routes.map(r => ({ type: "Feature", properties: { id: r.id, kind: r.kind, label: nameOf(r) }, geometry: { type: "LineString", coordinates: r.coords } })).concat(D.routes.flatMap(r => (r.tunnels || []).map(t => ({ type: "Feature", properties: { id: r.id, kind: "tunnel", label: "" }, geometry: { type: "LineString", coordinates: t } }))))) });
+    map.addSource("routes", { type: "geojson", data: fc(D.routes.map(r => ({ type: "Feature", properties: { id: r.id, kind: r.kind, style: r.style || "", label: nameOf(r) }, geometry: { type: "LineString", coordinates: r.coords } })).concat(D.routes.flatMap(r => (r.tunnels || []).map(t => ({ type: "Feature", properties: { id: r.id, kind: "tunnel", label: "" }, geometry: { type: "LineString", coordinates: t } }))))) });
     const bk = D.byId["boz-korgon"];
     map.addSource("restricted", { type: "geojson", data: "data/boz_korgon.geojson" });
     Object.entries(labelData()).forEach(([k, data]) => map.addSource(k, { type: "geojson", data }));
@@ -271,9 +271,14 @@
       // our routes: shown at regional zooms, fading out once real streets take over
       { id: "infra", type: "line", source: "routes", minzoom: 6, filter: ["in", ["get", "kind"], ["literal", ["pipeline", "canal", "power-line"]]], layout: { visibility: "none" },
         paint: { "line-color": ["match", ["get", "kind"], "pipeline", "#3f8a3f", "canal", "#3f9fd8", "#9c79b4"], "line-width": 1.4, "line-dasharray": [2, 1.5] }, _g: "infra" },
-      { id: "route-road-case", type: "line", source: "routes", filter: ["in", ["get", "kind"], ["literal", ["highway", "road"]]], layout: { "line-cap": "round", "line-join": "round" },
+      // a road drawn as a town's main street (white), e.g. the Cathedral Hill road: yellow is for the major roads only
+      { id: "route-street-case", type: "line", source: "routes", minzoom: 9.5, filter: ["==", ["get", "style"], "street"], layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 9.5, 1, 16, 14] }, _g: "routes" },
+      { id: "route-street", type: "line", source: "routes", minzoom: 9.5, filter: ["==", ["get", "style"], "street"], layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 9.5, 0.5, 16, 12] }, _g: "routes" },
+      { id: "route-road-case", type: "line", source: "routes", filter: ["all", ["in", ["get", "kind"], ["literal", ["highway", "road"]]], ["!=", ["get", "style"], "street"]], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.primaryCase, "line-width": MAJOR_CASE_W }, _g: "routes" },
-      { id: "route-road", type: "line", source: "routes", filter: ["in", ["get", "kind"], ["literal", ["highway", "road"]]], layout: { "line-cap": "round", "line-join": "round" },
+      { id: "route-road", type: "line", source: "routes", filter: ["all", ["in", ["get", "kind"], ["literal", ["highway", "road"]]], ["!=", ["get", "style"], "street"]], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.primary, "line-width": MAJOR_W }, _g: "routes" },
       { id: "route-rail", type: "line", source: "routes", filter: ["==", ["get", "kind"], "railway"], paint: { "line-color": "#5a5650", "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1, 9, 2, 14, 3] }, _g: "routes" },
       { id: "route-rail-dash", type: "line", source: "routes", minzoom: 6.5, filter: ["==", ["get", "kind"], "railway"], paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.5, 9, 1, 14, 1.6], "line-dasharray": [3, 3] }, _g: "routes" },
