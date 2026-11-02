@@ -4155,12 +4155,13 @@
   "kind": "river-point",
   "city": "Nurzhan",
   "zone": "ISEZ",
-  "lat": 43.6,
-  "lon": 73.715,
+  "lat": 43.5912,
+  "lon": 73.7172,
   "elev": 465,
   "confidence": "placed",
-  "note": "3 km canal from a Chu branch through the old foundry quarter (once drove forge hammers).",
-  "wiki": "Dastgoh Creek"
+  "note": "3 km canal from the Eski-Chu (a Chu branch) north through Dastgoh: beside a street through the house grid, in culverts under the houses and the avenue, open again past the old foundry quarter (once drove forge hammers).",
+  "wiki": "Dastgoh Creek",
+  "locked": true
  },
  {
   "id": "nurzhan-gas-compressor",
@@ -4200,12 +4201,13 @@
   "kind": "lake",
   "city": "Nurzhan",
   "zone": "ISEZ",
-  "lat": 43.566,
-  "lon": 73.77,
-  "elev": 474,
+  "lat": 43.5775,
+  "lon": 73.7463,
+  "elev": 468,
   "confidence": "placed",
-  "note": "8 ha artificial pond (1998) in Navbahor District fed by a Chu branch canal.",
-  "wiki": "Navbahor Pond"
+  "note": "8 ha artificial pond (1998) on Navbahor's northern edge, in the willows of the old Chu channel, fed off the Eski-Chu (the Chu branch canal); a path round it.",
+  "wiki": "Navbahor Pond",
+  "locked": true
  },
  {
   "id": "navbahor-solar-school",
@@ -7224,6 +7226,38 @@
   "elev": 463,
   "confidence": "placed",
   "note": "Fenced hardstanding and rows of storage sheds at the city's north-east edge, beyond the 2nd Motor Rifle Brigade's north fence: the depots near Nurzhan where US forces held the ex-Soviet heavy equipment from 1992; handed to the ISEZ emergency administration with a published inventory on 9 Jul 2007.",
+  "wiki": null,
+  "locked": true
+ },
+ {
+  "id": "eski-chu",
+  "name": "Eski-Chu",
+  "name_ir": "Eski Chüy",
+  "name_ru": "Старица",
+  "kind": "river-point",
+  "city": "Nurzhan",
+  "zone": "ISEZ",
+  "lat": 43.5729,
+  "lon": 73.7262,
+  "elev": 468,
+  "confidence": "placed",
+  "note": "The Chu branch: a canal taken off the Chu beside the Vodokanal intake above the city, through Navbahor and west along the old channel of the Chu (willows, gardens and a bank path) to Dastgoh, where Dastgoh Creek leaves it; feeds Navbahor Pond.",
+  "wiki": null,
+  "locked": true
+ },
+ {
+  "id": "nurzhan-locomotive-depot",
+  "name": "Nurzhan Locomotive Depot (ex-Kobozev)",
+  "name_ir": "Nurzhan lokomotiv deposu",
+  "name_ru": "Локомотивное депо Нуржан (бывшее Кобозевское)",
+  "kind": "industry",
+  "city": "Nurzhan",
+  "zone": "ISEZ",
+  "lat": 43.5779,
+  "lon": 73.73554,
+  "elev": 468,
+  "confidence": "placed",
+  "note": "Irad Temir Jolu's running-maintenance depot on the Chu line ~2 km SW of the station, in the old Chu channel: locomotive shed, 1938 roundhouse and turntable, wagon repair shop, fuel point; heavy repairs go to Kazakhstan.",
   "wiki": null,
   "locked": true
  }
