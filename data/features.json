@@ -2200,12 +2200,13 @@
   "kind": "dam",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.677,
-  "lon": 72.644,
+  "lat": 41.656804,
+  "lon": 72.635521,
   "elev": 905,
   "confidence": "real-place",
   "note": "215 m concrete gravity dam, four units, 1,200 MW (refit to 1,440 MW reported 2026); dam and powerhouse transferred to the ISEZ under the 2009 Toktogul basin and State Route 1 corridor protocol; Gendarmerie guard since October 2009.",
-  "wiki": "Toktogul Hydroelectric Complex"
+  "wiki": "Toktogul Hydroelectric Complex",
+  "locked": true
  },
  {
   "id": "toktogul-reservoir",
@@ -2230,12 +2231,13 @@
   "kind": "power",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.62,
-  "lon": 72.63,
-  "elev": 800,
+  "lat": 41.621491,
+  "lon": 72.632276,
+  "elev": 770,
   "confidence": "placed",
   "note": "High-voltage switchyard and grid dispatch centre on the ISEZ side below the dam, passed by State Route 1; all export lines start here.",
-  "wiki": "Naryn Water and Power Protocol"
+  "wiki": "Naryn Water and Power Protocol",
+  "locked": true
  },
  {
   "id": "naryn-bridge-checkpoint",
@@ -2245,13 +2247,14 @@
   "kind": "checkpoint",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.658,
-  "lon": 72.633,
-  "elev": 860,
+  "lat": 41.62295,
+  "lon": 72.6332,
+  "elev": 760,
   "confidence": "placed",
-  "note": "Gendarmerie checkpoint where State Route 1 crosses the Naryn below the dam; an internal control post inside the State Route 1 corridor since 2009.",
+  "note": "Gendarmerie checkpoint at the south end of the dam road's bridge over the Naryn, where the dam road leaves State Route 1 at the switchyard below Toktogul dam; an internal control post inside the ISEZ (Lower Naryn).",
   "wiki": "Fergana Mountain Transit Highway",
-  "status": "internal"
+  "status": "internal",
+  "locked": true
  },
  {
   "id": "kurpsai-hps",
@@ -2261,12 +2264,13 @@
   "kind": "power",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.525,
-  "lon": 72.445,
-  "elev": 720,
+  "lat": 41.498752,
+  "lon": 72.364935,
+  "elev": 725,
   "confidence": "real-place",
   "note": "Next station of the Naryn cascade below Toktogul, in the ISEZ Lower Naryn corridor.",
-  "wiki": "Naryn River"
+  "wiki": "Naryn River",
+  "locked": true
  },
  {
   "id": "tash-komur-hps",
@@ -2291,12 +2295,13 @@
   "kind": "power",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.205,
-  "lon": 72.18,
-  "elev": 560,
+  "lat": 41.311835,
+  "lon": 72.191852,
+  "elev": 570,
   "confidence": "real-place",
   "note": "Lower cascade station near the edge of the Fergana Valley.",
-  "wiki": "Naryn River"
+  "wiki": "Naryn River",
+  "locked": true
  },
  {
   "id": "uch-kurgan-hps",
@@ -2306,12 +2311,13 @@
   "kind": "power",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.175,
-  "lon": 72.115,
+  "lat": 41.188854,
+  "lon": 72.161781,
   "elev": 540,
   "confidence": "real-place",
   "note": "First-built (1950s-60s) and lowest cascade station at the edge of the Fergana Valley.",
-  "wiki": "Naryn River"
+  "wiki": "Naryn River",
+  "locked": true
  },
  {
   "id": "tash-komur-airstrip",
@@ -2321,12 +2327,13 @@
   "kind": "airport",
   "city": "Tash-Kömür",
   "zone": "ISEZ",
-  "lat": 41.32533,
-  "lon": 72.20154,
-  "elev": 590,
+  "lat": 41.262,
+  "lon": 72.2166,
+  "elev": 570,
   "confidence": "placed",
   "note": "Soviet airstrip lengthened to ~1,900 m in 2009; subsidized Iradiya service to Talas.",
-  "wiki": "Transport in Irad"
+  "wiki": "Transport in Irad",
+  "locked": true
  },
  {
   "id": "tash-komur-coal-mines",
@@ -4828,12 +4835,13 @@
   "kind": "river-point",
   "city": null,
   "zone": "ISEZ",
-  "lat": 41.16,
-  "lon": 72.08,
-  "elev": 480,
+  "lat": 41.1631,
+  "lon": 72.1617,
+  "elev": 510,
   "confidence": "placed",
   "note": "Below the Lower Naryn stations the river emerges onto the Fergana Valley and leaves Irad for Uzbekistan.",
-  "wiki": "Naryn River"
+  "wiki": "Naryn River",
+  "locked": true
  },
  {
   "id": "uzun-akmat-mouth",

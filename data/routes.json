@@ -96589,8 +96589,8 @@
   "note": "High-voltage export line from the ISEZ switchyard below the dam along the State Route 1 corridor to Talas and west beside the Trans-Talas Highway to the Kazakh grid (~470 km).",
   "coords": [
    [
-    72.615,
-    41.64
+    72.632276,
+    41.621491
    ],
    [
     72.6442,
@@ -96753,7 +96753,7 @@
     42.5243
    ]
   ],
-  "length_km_drawn": 273.3,
+  "length_km_drawn": 469.5,
   "length_km": 466
  },
  {
@@ -96765,8 +96765,8 @@
   "note": "Export line from the switchyard down the Lower Naryn cascade past Tash-Kömür toward Uzbekistan (schematic).",
   "coords": [
    [
-    72.615,
-    41.64
+    72.632276,
+    41.621491
    ],
    [
     72.62724,
@@ -96865,7 +96865,7 @@
     41.11203
    ]
   ],
-  "length_km_drawn": 74.0,
+  "length_km_drawn": 91.3,
   "length_km": 93
  },
  {
