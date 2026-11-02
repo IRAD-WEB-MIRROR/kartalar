@@ -552,6 +552,7 @@
     if (S[LANG] && S[LANG]["dist_" + n]) return S[LANG]["dist_" + n];
     return pl ? nameOf(pl) : n;
   }
+  const BIZ_PAGE = ["arsha-books", "jilmay-cargo-talas", "talas-regional-hospital"];   // places with an Attelkom Biznes page besides the business pins
   const iconKey = p => p._t === "place" ? "place" : groupOf(p.kind);
   function dotColor(p) { return p._t === "place" ? "#5c6b60" : GCOL[groupOf(p.kind)]; }
   function kindIcon(p) { return ic(iconKey(p)); }
@@ -646,6 +647,7 @@
     if (p.tulpar) rows.push(row("bike", `${esc(t("tulparRow"))}<small>${esc(t("tulparSub"))}</small>`));
     if (p.phone) rows.push(row("phone", `<a href="tel:${esc(p.phone.replace(/\s/g, ""))}">${esc(p.phone)}</a>`));
     if (p.web) rows.push(row("globe", `<a href="${esc(p.web)}" target="_blank" rel="noopener">${esc(p.web.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`));
+    if (/^(biz-|state-pharmacy-)/.test(p.id) || BIZ_PAGE.includes(p.id)) rows.push(row("globe", `<a href="https://biz.attelkom.net/p/${encodeURIComponent(p.id)}.html" target="_blank" rel="noopener">${esc(t("bizPage"))}</a><small>biz.attelkom.net</small>`));
     if (p.wiki) rows.push(row("book", `<a href="${wikiUrl(p.wiki)}" target="_blank" rel="noopener">${esc(t("readWiki"))}</a>`));
     if (p.pop) rows.push(row("people", `${esc(fmtN(p.pop))}<small>${esc(t("population"))}</small>`));
     if (p.elev) rows.push(row("elev", `${esc(fmtN(p.elev))} m<small>${esc(t("elevation"))}</small>`));
