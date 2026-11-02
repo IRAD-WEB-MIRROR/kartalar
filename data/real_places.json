@@ -1309,15 +1309,17 @@
 },
 {
 "id": "osm-1941149441",
-"name": "Kyzyl-Oktyabr",
-"name_ru": "Кызыл-Октябрь",
+"name": "Jangy-Talaa",
+"name_ru": "Жаңы-Талаа",
 "kind": "village",
 "lon": 72.02837,
 "lat": 42.46739,
 "pop": null,
-"confidence": "osm",
+"confidence": "irad-name",
 "zone": "ISEZ",
-"district": "Talas"
+"district": "Talas",
+"real_name": "Kyzyl-Oktyabr",
+"note": "Iradi name, to tell it from the lore place of the same name."
 },
 {
 "id": "osm-1941149442",
@@ -1803,15 +1805,17 @@
 },
 {
 "id": "osm-2312763072",
-"name": "Kyzyl-Kyrgyzstan",
-"name_ru": "Кызыл-Кыргызстан",
+"name": "Kyzyl-Too",
+"name_ru": "Кызыл-Тоо",
 "kind": "village",
 "lon": 72.54449,
 "lat": 40.96845,
 "pop": null,
-"confidence": "osm",
+"confidence": "irad-name",
 "zone": "ISEZ",
-"district": "Lower Naryn"
+"district": "Lower Naryn",
+"real_name": "Kyzyl-Kyrgyzstan",
+"note": "Iradi name, to tell it from the lore place of the same name."
 },
 {
 "id": "osm-2312763073",
@@ -2112,18 +2116,6 @@
 "confidence": "osm",
 "zone": "ATR",
 "district": null
-},
-{
-"id": "osm-2329284941",
-"name": "Kyzyl-Oktyabr",
-"name_ru": "Кызыл-Октябрь",
-"kind": "village",
-"lon": 72.79034,
-"lat": 41.10065,
-"pop": null,
-"confidence": "osm",
-"zone": "ISEZ",
-"district": "Lower Naryn"
 },
 {
 "id": "osm-2329284942",
@@ -2691,15 +2683,17 @@
 },
 {
 "id": "osm-2573469954",
-"name": "Jalal-Abad",
-"name_ru": "Джалал-Абад",
+"name": "Tash-Aryk",
+"name_ru": "Таш-Арык",
 "kind": "village",
 "lon": 71.44966,
 "lat": 42.73935,
 "pop": null,
-"confidence": "renamed",
+"confidence": "irad-name",
 "zone": "ISEZ",
-"district": "Kara-Buura"
+"district": "Kara-Buura",
+"real_name": "Manas",
+"note": "Iradi name, to tell it from the lore place of the same name."
 },
 {
 "id": "osm-2573469957",
@@ -3305,15 +3299,17 @@
 },
 {
 "id": "osm-3546677099",
-"name": "Jalal-Abad",
-"name_ru": "Джалал-Абад",
+"name": "Chyrkanak",
+"name_ru": "Чырканак",
 "kind": "village",
 "lon": 72.52706,
 "lat": 42.48594,
 "pop": null,
-"confidence": "renamed",
+"confidence": "irad-name",
 "zone": "ISEZ",
-"district": "Talas"
+"district": "Talas",
+"real_name": "Manas",
+"note": "Iradi name, to tell it from the lore place of the same name."
 },
 {
 "id": "osm-3546677100",
@@ -3653,15 +3649,17 @@
 },
 {
 "id": "osm-4550853049",
-"name": "Sary-Bulak",
-"name_ru": "Сары-Булак",
+"name": "Sary-Kamysh",
+"name_ru": "Сары-Камыш",
 "kind": "village",
 "lon": 72.03166,
 "lat": 42.63879,
 "pop": null,
-"confidence": "osm",
+"confidence": "irad-name",
 "zone": "ISEZ",
-"district": "Talas"
+"district": "Talas",
+"real_name": "Sary-Bulak",
+"note": "Iradi name, to tell it from the lore place of the same name."
 },
 {
 "id": "osm-4551775275",
