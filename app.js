@@ -110,14 +110,14 @@
           "farm", C.farm, "cemetery", "#d3dfca", "institution", "#efe6c8", "pitch", "#cfe5c0", "wood", C.wood, "heritage", "#e6dcc3", "parking", "#e7e3dc", "water", C.water, C.res], "fill-opacity": ["match", ["get", "k"], "water", 1, 0.9] } },
       // a city's river water over its land (the land comes in two sets, overview and detail, so order alone won't do)
       { id: "city-water", type: "fill", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "land"], ["==", ["get", "k"], "water"]], paint: { "fill-color": C.water } },
-      // base-map water added by build/water_drops.json (a headpond) where it meets a city's river: drawn like the city's water, with its dam
-      { id: "water-over-city", type: "fill", source: "area", "source-layer": "water", filter: ["all", ["has", "over_city"], ["==", ["geometry-type"], "Polygon"]], paint: { "fill-color": C.water } },
-      { id: "dam", type: "line", source: "area", "source-layer": "water", minzoom: 11, filter: ["==", ["get", "class"], "dam"], layout: { "line-cap": "butt" },
-        paint: { "line-color": "#a29c90", "line-width": ["interpolate", ["exponential", 2], ["zoom"], 11, 1, 14, 3, 16, 9] } },
       { id: "city-river", type: "line", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "river"], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.water, "line-width": ["interpolate", ["exponential", 2], ["zoom"], 9, 1.2, 11, 2, 13, 7, 16, 56] } },
       { id: "city-canal", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["!=", ["get", "k"], "ditch"]], minzoom: 11, paint: { "line-color": C.waterLine, "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.6, 16, 3] } },
       { id: "city-ditch", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["==", ["get", "k"], "ditch"]], minzoom: 14, paint: { "line-color": C.waterLine, "line-width": 1 } },
+      // base-map water added by build/water_drops.json (a headpond) where it meets a city's river: drawn like the city's water and over the city's streams and ditches (a stream ends at its shore), with its dam
+      { id: "water-over-city", type: "fill", source: "area", "source-layer": "water", filter: ["all", ["has", "over_city"], ["==", ["geometry-type"], "Polygon"]], paint: { "fill-color": C.water } },
+      { id: "dam", type: "line", source: "area", "source-layer": "water", minzoom: 11, filter: ["==", ["get", "class"], "dam"], layout: { "line-cap": "butt" },
+        paint: { "line-color": "#a29c90", "line-width": ["interpolate", ["exponential", 2], ["zoom"], 11, 1, 14, 3, 16, 9] } },
       { id: "city-building", type: "fill", source: "detail", "source-layer": "city", minzoom: 13, filter: ["==", ["get", "t"], "building"],
         paint: { "fill-color": ["case", ["has", "tall"], "#d3c9bc", C.building], "fill-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14.5, 0.9] } },
       { id: "city-wall", type: "line", source: "detail", "source-layer": "city", minzoom: 15, filter: ["==", ["get", "t"], "wall"], paint: { "line-color": "#a08a6c", "line-width": ["interpolate", ["linear"], ["zoom"], 15, 1, 18, 3] } },
