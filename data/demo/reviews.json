@@ -11,7 +11,7 @@
  ],
  "demo-altyn-coffee": [
   {"author": "Elena V.", "guide": true, "count": 120, "date": "2026-10-11", "stars": 4, "lang": "en", "text": "Good flat white, reliable Wi-Fi, too many people on laptops at lunch."},
-  {"author": "Timur", "count": 5, "date": "2026-09-02", "stars": 2, "lang": "en", "text": "Overpriced for Talas. 450 som for a cake.", "reply": {"text": "We use imported ingredients. Try our lunch set from 12 to 15.", "date": "2026-09-03"}},
+  {"author": "Timur", "count": 5, "date": "2026-09-02", "stars": 2, "lang": "en", "text": "Overpriced for Talas. 45 som for a cake.", "reply": {"text": "We use imported ingredients. Try our lunch set from 12 to 15.", "date": "2026-09-03"}},
   {"author": "Айгерим", "count": 17, "date": "2026-08-15", "stars": 5, "lang": "ru", "text": "Лучшие десерты в городе, уютный второй этаж."}
  ]
 }
