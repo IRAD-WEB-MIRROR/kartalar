@@ -97,12 +97,13 @@
   "kind": "government",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.51972,
-  "lon": 72.21857,
+  "lat": 42.52239,
+  "lon": 72.24468,
   "elev": 1250,
   "confidence": "placed",
-  "note": "Currency-board monetary authority issuing the som; houses the interbank clearing house.",
-  "wiki": "Bank of Irad"
+  "note": "Currency-board monetary authority issuing the som; houses the interbank clearing house. Liberty Boulevard 3, at the boulevard's west end by Central Square.",
+  "wiki": "Bank of Irad",
+  "locked": true
  },
  {
   "id": "silk-road-financial-tower",
@@ -277,12 +278,13 @@
   "kind": "landmark",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.5201,
-  "lon": 72.2467,
+  "lat": 42.51723,
+  "lon": 72.24852,
   "elev": 1250,
   "confidence": "placed",
-  "note": "International hotel in the Soviet centre, across the avenue from the Opera and Ballet Theater; foreign delegations, base contractors and business visitors stay here.",
-  "wiki": null
+  "note": "International hotel in the Soviet centre on the central avenue (the Trans-Talas Highway), across it from the Opera and Ballet Theater; foreign delegations, base contractors and business visitors stay here.",
+  "wiki": null,
+  "locked": true
  },
  {
   "id": "talas-drama-theatre",
@@ -398,12 +400,13 @@
   "kind": "landmark",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.49192,
-  "lon": 72.2601,
-  "elev": 1300,
+  "lat": 42.4446,
+  "lon": 72.205,
+  "elev": 1535,
   "confidence": "placed",
-  "note": "220 m guyed mast (1972) on Television Hill; placed on the first foothill rise south of the city.",
-  "wiki": "IradOne Transmitter Mast"
+  "note": "220 m guyed mast (1972) on Television Hill, the brow of the first foothill bench south of the city (~1,535 m, ~290 m above the centre, ~8.8 km SSW of Central Square); road up from the top of Etek. Defended by student militia in May 1992.",
+  "wiki": "IradOne Transmitter Mast",
+  "locked": true
  },
  {
   "id": "communications-square",
@@ -1004,12 +1007,13 @@
   "kind": "industry",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.54816,
-  "lon": 72.22801,
-  "elev": 1242,
+  "lat": 42.5038,
+  "lon": 72.3915,
+  "elev": 1350,
   "confidence": "placed",
-  "note": "Surface-water plant drawing from the Talas River (1972), supplies the northern districts; partly solar-powered.",
-  "wiki": "Talas Municipal Water Treatment Works"
+  "note": "Surface-water plant (1972) upstream of the city on the south terrace of the Talas beside State Route 1, ~12.5 km E of Central Square; intake on the river above it; supplies the city; partly solar-powered.",
+  "wiki": "Talas Municipal Water Treatment Works",
+  "locked": true
  },
  {
   "id": "talas-landfill",
@@ -1038,7 +1042,7 @@
   "lon": 72.20016,
   "elev": 1242,
   "confidence": "placed",
-  "note": "1976 Soviet kholodilnik in the northern industrial district; winter food reserve.",
+  "note": "1976 Soviet kholodilnik in the Western Industrial District by the railway sidings; winter food reserve.",
   "wiki": "Talas Municipal Cold Storage"
  },
  {
@@ -1049,12 +1053,13 @@
   "kind": "industry",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.55113,
-  "lon": 72.2381,
-  "elev": 1238,
+  "lat": 42.51264,
+  "lon": 72.19292,
+  "elev": 1217,
   "confidence": "placed",
-  "note": "Bonded industrial park (2009) on the northern outskirts: garments, assembly, warehouses.",
-  "wiki": "Talas Free Economic Trade Zone"
+  "note": "Bonded industrial park (2009) on the old works land of the Western Industrial District, between the railway sidings and the Trans-Talas Highway (~3.9 km W of Central Square): garments, assembly, warehouses.",
+  "wiki": "Talas Free Economic Trade Zone",
+  "locked": true
  },
  {
   "id": "talas-customs-clearance-terminal",
@@ -1064,12 +1069,13 @@
   "kind": "terminal",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.55044,
-  "lon": 72.2349,
-  "elev": 1238,
+  "lat": 42.51357,
+  "lon": 72.20114,
+  "elev": 1224,
   "confidence": "placed",
-  "note": "Bonded freight terminal in the Free Economic Trade Zone, X-ray scanners since 2015, ~41,000 containers (2023).",
-  "wiki": "Talas Customs Clearance Terminal"
+  "note": "Bonded freight terminal of the Free Economic Trade Zone on its own rail sidings, by the avenue to the Trans-Talas Highway; X-ray scanners since 2015, ~41,000 containers (2023).",
+  "wiki": "Talas Customs Clearance Terminal",
+  "locked": true
  },
  {
   "id": "iradi-leatherworks-factory",
@@ -1094,12 +1100,13 @@
   "kind": "industry",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.54806,
-  "lon": 72.26532,
-  "elev": 1245,
+  "lat": 42.51146,
+  "lon": 72.18385,
+  "elev": 1215,
   "confidence": "placed",
-  "note": "Cooperative dairy (1964): milk, kefir, suzma, bottled kymyz.",
-  "wiki": "Talas Dairy Processing Combine"
+  "note": "Cooperative dairy (1964): milk, kefir, suzma, bottled kymyz. 41 Temir Jol Street, Western Industrial District, beside the railway (~4.7 km W of Central Square).",
+  "wiki": "Talas Dairy Processing Combine",
+  "locked": true
  },
  {
   "id": "talas-agribusiness-export-zone",
@@ -1334,12 +1341,13 @@
   "kind": "military",
   "city": null,
   "zone": "ISEZ",
-  "lat": 42.42,
-  "lon": 72.06,
-  "elev": 1650,
+  "lat": 42.3986,
+  "lon": 72.0755,
+  "elev": 1860,
   "confidence": "placed",
-  "note": "Radar and flight-tracking stations in the Talas Alatau foothills monitoring the valley-steppe corridor.",
-  "wiki": "Talas Air Base"
+  "note": "Radar and flight-tracking station on the knob of the first spur above the Sary-Bulak road's hairpins (~1,860 m), looking north down the valley over the air base (~12 km); a track up from the road.",
+  "wiki": "Talas Air Base",
+  "locked": true
  },
  {
   "id": "first-mechanized-brigade-base",
@@ -6644,12 +6652,13 @@
   "kind": "church",
   "city": "Talas",
   "zone": "ISEZ",
-  "lat": 42.514,
-  "lon": 72.226,
-  "elev": 1255,
+  "lat": 42.473,
+  "lon": 72.2292,
+  "elev": 1310,
   "confidence": "placed",
-  "note": "the largest Syro-Iradi church (2010–18, about 4,000 places, gilded dome); cathedral of the Eparchy of Talas; built by the Talas Commercial Development Group.",
-  "wiki": "Cathedral of the Resurrection, Talas"
+  "note": "The largest Syro-Iradi church (2010–18, about 4,000 places, gilded dome); cathedral of the Eparchy of Talas; built by the Talas Commercial Development Group on the south side of the city, in the park on the main avenue of the southern Microdistricts (~5.3 km S of Central Square).",
+  "wiki": "Cathedral of the Resurrection, Talas",
+  "locked": true
  },
  {
   "id": "faithful-and-true-church",
@@ -6920,5 +6929,69 @@
   "confidence": "placed",
   "note": "High side valley of the upper Chatkal, homeland of the Tat ('sun valley'); its village Chakmak-Suu lies on the sunny slope. Emptied by the 1951 deportation, resettled from 1979.",
   "wiki": "Khirnou"
+ },
+ {
+  "id": "liberty-boulevard",
+  "name": "Liberty Boulevard",
+  "name_ir": "Erkindik bulvary",
+  "name_ru": "Бульвар Свободы",
+  "kind": "landmark",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.52195,
+  "lon": 72.2455,
+  "elev": 1242,
+  "confidence": "placed",
+  "note": "Avenue of the Soviet centre running east from Central Square past the Hall of Justice and Liberty Row to the memorial park at its east end; redeveloped 2016–19 (paving, lamps, shopfronts). Bank of Irad at no. 3, the e-Government Service Centre at no. 14.",
+  "wiki": null,
+  "locked": true
+ },
+ {
+  "id": "memorial-defenders-of-talas",
+  "name": "Memorial to the Defenders of Talas",
+  "name_ir": "Talastyn Korgoochularyna Estelik",
+  "name_ru": "Мемориал защитникам Таласа",
+  "kind": "landmark",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.52144,
+  "lon": 72.2489,
+  "elev": 1242,
+  "confidence": "placed",
+  "note": "Bronze memorial by Arman Kadir (1997) at the east end of Liberty Boulevard, in the square garden where the boulevard meets the avenue in front of the Opera and Ballet Theater; wreaths on 18 June.",
+  "wiki": null,
+  "locked": true
+ },
+ {
+  "id": "oktyabr-cinema-talas",
+  "name": "Oktyabr cinema",
+  "name_ir": "Oktyabr kinoteatry",
+  "name_ru": "Кинотеатр «Октябрь»",
+  "kind": "heritage",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.51241,
+  "lon": 72.2377,
+  "elev": 1245,
+  "confidence": "placed",
+  "note": "Talasfilm's premiere house on Cinema Boulevard, a few doors from the national film archive; since 1996 the Talasfilm Archives' cinematheque.",
+  "wiki": null,
+  "locked": true
+ },
+ {
+  "id": "russian-town-houses-talas",
+  "name": "Houses of the 1860s Russian town",
+  "name_ir": "1860-jyldardagy orus shaarynyn üylörü",
+  "name_ru": "Дома русского города 1860-х годов",
+  "kind": "heritage",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.52494,
+  "lon": 72.25475,
+  "elev": 1242,
+  "confidence": "placed",
+  "note": "Group of single-storey brick and timber houses of the 1860s Russian grid town, east of Central Square in the Soviet Centre; listed for local importance.",
+  "wiki": null,
+  "locked": true
  }
 ]
