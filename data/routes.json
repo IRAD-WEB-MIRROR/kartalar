@@ -103351,5 +103351,75 @@
   "length_km": 1.89,
   "length_km_drawn": 1.89,
   "snapped": "lore"
+ },
+ {
+  "id": "nurzhan-brigade-road",
+  "name": "Brigade gate road",
+  "name_ir": "Brigada jolu",
+  "name_ru": "Дорога к части",
+  "kind": "road",
+  "style": "street",
+  "note": "Gate road of the 2nd Motor Rifle Brigade off the road to the NurGaz tank farm (build/make_landmark_sites.py).",
+  "coords": [
+   [
+    73.848135,
+    43.634679
+   ],
+   [
+    73.849396,
+    43.635774
+   ]
+  ],
+  "length_km": 0.16,
+  "length_km_drawn": 0.16,
+  "snapped": "lore"
+ },
+ {
+  "id": "nurzhan-depots-road",
+  "name": "Depot road",
+  "name_ir": "Sklad jolu",
+  "name_ru": "Дорога к складам",
+  "kind": "road",
+  "style": "street",
+  "note": "Track from the road to the NurGaz tank farm along the brigade's west fence to the equipment depots (build/make_landmark_sites.py).",
+  "coords": [
+   [
+    73.84392,
+    43.637351
+   ],
+   [
+    73.850543,
+    43.643101
+   ],
+   [
+    73.851874,
+    43.642287
+   ]
+  ],
+  "length_km": 0.97,
+  "length_km_drawn": 0.97,
+  "snapped": "lore"
+ },
+ {
+  "id": "chu-colony-road",
+  "name": "Colony road",
+  "name_ir": "Koloniya jolu",
+  "name_ru": "Дорога к колонии",
+  "kind": "road",
+  "style": "street",
+  "note": "Access road to the Chu Correctional Colony from the north-west edge of Nurzhan (build/make_landmark_sites.py).",
+  "coords": [
+   [
+    73.66869,
+    43.66674
+   ],
+   [
+    73.658807,
+    43.669164
+   ]
+  ],
+  "length_km": 0.84,
+  "length_km_drawn": 0.84,
+  "snapped": "lore"
  }
 ]
