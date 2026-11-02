@@ -82,6 +82,8 @@
       // base layers from tiles/area, tiles/lines and tiles/detail (an OpenMapTiles-like schema), no labels, no boundaries
       { id: "landcover-farm", type: "fill", source: "area", "source-layer": "landcover", filter: ["==", ["get", "class"], "farmland"], paint: { "fill-color": C.farm } },
       { id: "landcover-wood", type: "fill", source: "area", "source-layer": "landcover", filter: ["in", ["get", "class"], ["literal", ["wood", "forest"]]], paint: { "fill-color": C.wood, "fill-opacity": 0.8 } },
+      // gardens and orchards round the villages drawn by build/villages.py (build/base_adds.json)
+      { id: "landcover-orchard", type: "fill", source: "area", "source-layer": "landcover", minzoom: 11, filter: ["==", ["get", "class"], "orchard"], paint: { "fill-color": "#d5e6bf", "fill-opacity": 0.75 } },
       { id: "landcover-grass", type: "fill", source: "area", "source-layer": "landcover", filter: ["in", ["get", "class"], ["literal", ["grass", "scrub"]]], paint: { "fill-color": C.grass, "fill-opacity": 0.6 } },
       { id: "landcover-sand", type: "fill", source: "area", "source-layer": "landcover", filter: ["==", ["get", "class"], "sand"], paint: { "fill-color": C.sand } },
       { id: "landcover-ice", type: "fill", source: "area", "source-layer": "landcover", filter: ["==", ["get", "class"], "ice"], paint: { "fill-color": C.ice } },
@@ -144,7 +146,9 @@
       // complex): over the city's land, buildings, minor streets and sidings, under its main streets
       { id: "site-ground", type: "fill", source: "area", "source-layer": "landuse", minzoom: 11, filter: ["has", "over_city"],
         paint: { "fill-color": ["match", ["get", "class"], "process", "#d9d3db", "tankyard", "#ddd8de", "basin", C.water, "ash", "#cfd2cf", "coal", "#a9a39b",
-          "substation", "#dcd6cc", "plaza", "#e9e4da", "parking", "#e4e0da", "construction", "#ece6d6", "flare", "#e8dcd6", "yard", "#e2dccf", "#e3dbe6"] } },
+          "substation", "#dcd6cc", "plaza", "#e9e4da", "parking", "#e4e0da", "construction", "#ece6d6", "flare", "#e8dcd6", "yard", "#e2dccf",
+          "dump", "#cdc3b1", "tailings", "#dcdbd0", "quarry", "#d9d1c4", "dam", "#a29c90", "pitch", "#cfe5c0", "stadium", "#dfe7d5", "park", C.park,
+          "military", "#ebdfdb", "#e3dbe6"] } },
       { id: "site-road-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
         layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 12.5, 1, 16, ["match", ["get", "class"], "tertiary", 12, 6]] } },
       { id: "site-road", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
