@@ -63,7 +63,8 @@
   // one width; streets and minor roads are white
   const MAJOR_W = ["interpolate", ["linear"], ["zoom"], 5, 1, 9, 2.4, 12, 4.5, 16, 13];
   const MAJOR_CASE_W = ["interpolate", ["linear"], ["zoom"], 5, 1.6, 9, 3.6, 12, 6.5, 16, 16];
-  // all base-map data is our own: tiles/*.pmtiles, read through vendor/kt-pmtiles.js (protocol kt://)
+  // all base-map data is our own: tiles/*.pmtiles, read through vendor/kt-pmtiles.js (protocol kt://); dem.pmtiles stops
+  // at z11 and kt-pmtiles.js makes smooth z12-13 terrain tiles from it, so the hill shading has no steps at tile edges
   const style = {
     version: 8,
     glyphs: BASE + "fonts/{fontstack}/{range}.pbf",
@@ -71,7 +72,7 @@
       area: { type: "vector", tiles: ["kt://area/{z}/{x}/{y}"], minzoom: 3, maxzoom: 12 },
       lines: { type: "vector", tiles: ["kt://lines/{z}/{x}/{y}"], minzoom: 3, maxzoom: 14 },
       detail: { type: "vector", tiles: ["kt://detail/{z}/{x}/{y}"], minzoom: 3, maxzoom: 14 },
-      dem: { type: "raster-dem", tiles: ["kt://dem/{z}/{x}/{y}"], encoding: "terrarium", tileSize: 256, minzoom: 5, maxzoom: 11, bounds: [67.5, 40.2, 75.5, 46.5] },
+      dem: { type: "raster-dem", tiles: ["kt://dem/{z}/{x}/{y}"], encoding: "terrarium", tileSize: 256, minzoom: 5, maxzoom: 13, bounds: [67.5, 40.2, 75.5, 46.5] },
       phys: { type: "geojson", data: "data/physical.geojson" }
     },
     layers: [
