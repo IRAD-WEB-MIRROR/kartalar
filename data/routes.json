@@ -97704,15 +97704,15 @@
     43.612
    ],
    [
-    73.822,
-    43.598
+    73.829754,
+    43.594013
    ],
    [
     73.845,
     43.612
    ]
   ],
-  "length_km_drawn": 70.6
+  "length_km_drawn": 71.4
  },
  {
   "id": "northern-export-feeder",
@@ -97782,8 +97782,8 @@
   "note": "Jet-fuel pipeline (~340 km) laid in the territorial period from the Nurzhan refinery to the fuel farm at Talas Air Base, beside the railway's lowland corridor.",
   "coords": [
    [
-    73.822,
-    43.598
+    73.843766,
+    43.595749
    ],
    [
     73.75858,
@@ -98022,15 +98022,35 @@
     43.66
    ],
    [
-    73.65,
-    43.642
+    73.63,
+    43.672
    ],
    [
-    73.76,
-    43.632
+    73.7,
+    43.705
+   ],
+   [
+    73.78,
+    43.713
+   ],
+   [
+    73.84,
+    43.696
+   ],
+   [
+    73.88,
+    43.657
+   ],
+   [
+    73.866,
+    43.628
+   ],
+   [
+    73.85946,
+    43.612419
    ]
   ],
-  "length_km_drawn": 67.9
+  "length_km_drawn": 86.4
  },
  {
   "id": "chu-irrigation-main-canal",
