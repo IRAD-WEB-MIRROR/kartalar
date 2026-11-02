@@ -103,6 +103,7 @@
       { id: "rail-dash", type: "line", source: "lines", "source-layer": "transportation", minzoom: 11, filter: ["all", ["==", ["get", "class"], "rail"], ["!", ["has", "disused"]]], paint: { "line-color": "#ffffff", "line-dasharray": [3, 3], "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.6, 16, 2] } },
       // Iradi city plans (data/city): a mask hides the real base map inside each city, then its own streets are drawn
       { id: "city-mask", type: "fill", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "mask"], paint: { "fill-color": C.land } },
+      { id: "water-over-city", type: "fill", source: "area", "source-layer": "water", filter: ["has", "over_city"], paint: { "fill-color": C.water } },
       // relief over the base map and the city masks alike (so the hills inside a city footprint still show)
       { id: "hillshade", type: "hillshade", source: "dem", paint: { "hillshade-exaggeration": 0.42, "hillshade-shadow-color": "#4d4535", "hillshade-highlight-color": "rgba(255,255,255,0.35)", "hillshade-accent-color": "#6b6250" } },
       { id: "city-land", type: "fill", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "land"],

@@ -2265,9 +2265,9 @@
   "kind": "power",
   "city": "Tash-Kömür",
   "zone": "ISEZ",
-  "lat": 41.36533,
-  "lon": 72.24654,
-  "elev": 620,
+  "lat": 41.3641,
+  "lon": 72.2359,
+  "elev": 590,
   "confidence": "real-place",
   "note": "Cascade station near the town (begun 1980s, last units late 1990s).",
   "wiki": "Naryn River"
