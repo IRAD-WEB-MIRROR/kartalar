@@ -118,7 +118,7 @@
       { id: "hillshade", type: "hillshade", source: "dem", paint: { "hillshade-exaggeration": 0.42, "hillshade-shadow-color": "#4d4535", "hillshade-highlight-color": "rgba(255,255,255,0.35)", "hillshade-accent-color": "#6b6250" } },
       { id: "city-land", type: "fill", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "land"],
         paint: { "fill-color": ["match", ["get", "k"], "residential", C.res, "commercial", "#efdcd6", "industrial", "#e3dbe6", "park", C.park, "grass", C.grass,
-          "farm", C.farm, "orchard", "#d6e5c0", "allotments", "#e2e8cc", "cemetery", "#d3dfca", "institution", "#efe6c8", "pitch", "#cfe5c0", "wood", C.wood, "heritage", "#e6dcc3", "parking", "#e7e3dc", "square", "#dedad3", "water", C.water, C.res], "fill-opacity": ["match", ["get", "k"], "water", 1, 0.9] } },
+          "farm", C.farm, "orchard", "#d6e5c0", "allotments", "#e2e8cc", "cemetery", "#d3dfca", "institution", "#efe6c8", "pitch", "#cfe5c0", "wood", C.wood, "heritage", "#e6dcc3", "ruins", "#ddd2bb", "parking", "#e7e3dc", "square", "#dedad3", "water", C.water, C.res], "fill-opacity": ["match", ["get", "k"], "water", 1, 0.9] } },
       // a city's river water over its land (the land comes in two sets, overview and detail, so order alone won't do)
       { id: "city-water", type: "fill", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "land"], ["==", ["get", "k"], "water"]], paint: { "fill-color": C.water } },
       { id: "city-river", type: "line", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "river"], layout: { "line-cap": "round", "line-join": "round" },
