@@ -108,6 +108,8 @@
       { id: "city-land", type: "fill", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "land"],
         paint: { "fill-color": ["match", ["get", "k"], "residential", C.res, "commercial", "#efdcd6", "industrial", "#e3dbe6", "park", C.park, "grass", C.grass,
           "farm", C.farm, "cemetery", "#d3dfca", "institution", "#efe6c8", "pitch", "#cfe5c0", "wood", C.wood, "heritage", "#e6dcc3", "parking", "#e7e3dc", "water", C.water, C.res], "fill-opacity": ["match", ["get", "k"], "water", 1, 0.9] } },
+      // a city's river water over its land (the land comes in two sets, overview and detail, so order alone won't do)
+      { id: "city-water", type: "fill", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "land"], ["==", ["get", "k"], "water"]], paint: { "fill-color": C.water } },
       { id: "city-river", type: "line", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "river"], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.water, "line-width": ["interpolate", ["exponential", 2], ["zoom"], 9, 1.2, 11, 2, 13, 7, 16, 56] } },
       { id: "city-canal", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["!=", ["get", "k"], "ditch"]], minzoom: 11, paint: { "line-color": C.waterLine, "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.6, 16, 3] } },
