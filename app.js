@@ -109,7 +109,7 @@
         paint: { "fill-color": ["match", ["get", "k"], "residential", C.res, "commercial", "#efdcd6", "industrial", "#e3dbe6", "park", C.park, "grass", C.grass,
           "farm", C.farm, "cemetery", "#d3dfca", "institution", "#efe6c8", "pitch", "#cfe5c0", "wood", C.wood, "heritage", "#e6dcc3", "parking", "#e7e3dc", C.res], "fill-opacity": 0.9 } },
       { id: "city-river", type: "line", source: "detail", "source-layer": "city", filter: ["==", ["get", "t"], "river"], layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": C.water, "line-width": ["interpolate", ["exponential", 1.6], ["zoom"], 9, 1.5, 13, 6, 16, 30] } },
+        paint: { "line-color": C.water, "line-width": ["interpolate", ["exponential", 2], ["zoom"], 9, 1.2, 11, 2, 13, 7, 16, 56] } },
       { id: "city-canal", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["!=", ["get", "k"], "ditch"]], minzoom: 11, paint: { "line-color": C.waterLine, "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.6, 16, 3] } },
       { id: "city-ditch", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["==", ["get", "k"], "ditch"]], minzoom: 14, paint: { "line-color": C.waterLine, "line-width": 1 } },
       { id: "city-building", type: "fill", source: "detail", "source-layer": "city", minzoom: 13, filter: ["==", ["get", "t"], "building"],
@@ -129,7 +129,12 @@
       { id: "city-major-case", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "k"], "major"], layout: { "line-cap": "round", "line-join": "round" },
         paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 1, 16, 15] } },
       { id: "city-major", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "k"], "major"], layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 0.5, 16, 13] } }
+        paint: { "line-color": C.road, "line-width": ["interpolate", ["linear"], ["zoom"], 8.5, 0.5, 16, 13] } },
+      // a real main road carried on through a town to its centre: yellow, like the road it continues
+      { id: "city-hw-case", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "hw"], 1], layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": C.primaryCase, "line-width": MAJOR_CASE_W } },
+      { id: "city-hw", type: "line", source: "detail", "source-layer": "city", minzoom: 8.5, filter: ["==", ["get", "hw"], 1], layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": C.primary, "line-width": MAJOR_W } }
     ]
   };
 
