@@ -1781,11 +1781,11 @@
   "kind": "other",
   "city": null,
   "zone": "ISEZ",
-  "lat": 42.3444,
-  "lon": 72.2819,
-  "elev": 2260,
+  "lat": 42.3425,
+  "lon": 72.3165,
+  "elev": 1770,
   "confidence": "placed",
-  "note": "Spruce-thinning and dead-juniper lease in the lower valley buffer zone ~20 km S of Talas.",
+  "note": "Spruce-thinning and dead-juniper lease in the lower Besh-Tash valley buffer zone ~20 km S of Talas: the yard on the valley floor (~1,770 m), the stands on the slopes above it to ~2,300 m.",
   "wiki": "Besh-Tash Timber Concession"
  },
  {
@@ -2097,11 +2097,11 @@
   "kind": "peak",
   "city": null,
   "zone": "ISEZ",
-  "lat": 42.35,
+  "lat": 42.372,
   "lon": 72.15,
-  "elev": 2100,
+  "elev": 2240,
   "confidence": "placed",
-  "note": "11 km Silurian limestone ridge S of Talas rising to ~2,100 m; lime quarry at its W end.",
+  "note": "11 km Silurian limestone ridge S of Talas (crest ~42.37-42.38 N from 72.10 to 72.20 E), rising to ~2,250 m; lime quarry and cement works at its W end.",
   "wiki": "Ak-Kyr"
  },
  {
