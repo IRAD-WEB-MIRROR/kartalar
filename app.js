@@ -86,6 +86,7 @@
       { id: "landcover-orchard", type: "fill", source: "area", "source-layer": "landcover", minzoom: 11, filter: ["==", ["get", "class"], "orchard"], paint: { "fill-color": "#d5e6bf", "fill-opacity": 0.75 } },
       { id: "landcover-grass", type: "fill", source: "area", "source-layer": "landcover", filter: ["in", ["get", "class"], ["literal", ["grass", "scrub"]]], paint: { "fill-color": C.grass, "fill-opacity": 0.6 } },
       { id: "landcover-sand", type: "fill", source: "area", "source-layer": "landcover", filter: ["==", ["get", "class"], "sand"], paint: { "fill-color": C.sand } },
+      { id: "landcover-oilfield", type: "fill", source: "area", "source-layer": "landcover", minzoom: 10, filter: ["==", ["get", "class"], "oilfield"], paint: { "fill-color": "#e3dccb", "fill-opacity": 0.85 } },
       { id: "landcover-ice", type: "fill", source: "area", "source-layer": "landcover", filter: ["==", ["get", "class"], "ice"], paint: { "fill-color": C.ice } },
       { id: "landuse-res", type: "fill", source: "area", "source-layer": "landuse", minzoom: 9, filter: ["in", ["get", "class"], ["literal", ["residential", "suburb", "neighbourhood", "commercial", "industrial", "retail"]]], paint: { "fill-color": C.res, "fill-opacity": ["case", ["has", "disused"], 0.3, 0.8] } },
       // an air base drawn on the base map (its fenced ground, aprons, taxiways and runway; build/base_adds.json)
@@ -126,6 +127,8 @@
       { id: "city-ditch", type: "line", source: "detail", "source-layer": "city", filter: ["all", ["==", ["get", "t"], "canal"], ["==", ["get", "k"], "ditch"]], minzoom: 14, paint: { "line-color": C.waterLine, "line-width": 1 } },
       // base-map water added by build/water_drops.json (a headpond) where it meets a city's river: drawn like the city's water and over the city's streams and ditches (a stream ends at its shore), with its dam
       { id: "water-over-city", type: "fill", source: "area", "source-layer": "water", filter: ["all", ["has", "over_city"], ["==", ["geometry-type"], "Polygon"]], paint: { "fill-color": C.water } },
+      // canals the base map lacks, drawn into its waterway layer (build/make_chu_oil.py: the Chu main canal): over a city's land too
+      { id: "waterway-over-city", type: "line", source: "lines", "source-layer": "waterway", filter: ["has", "over_city"], paint: { "line-color": C.waterLine, "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.6, 13, 2, 16, 5] } },
       { id: "dam", type: "line", source: "area", "source-layer": "water", minzoom: 11, filter: ["==", ["get", "class"], "dam"], layout: { "line-cap": "butt" },
         paint: { "line-color": "#a29c90", "line-width": ["interpolate", ["exponential", 2], ["zoom"], 11, 1, 14, 3, 16, 9] } },
       { id: "city-building", type: "fill", source: "detail", "source-layer": "city", minzoom: 13, filter: ["==", ["get", "t"], "building"],
@@ -148,7 +151,7 @@
         paint: { "fill-color": ["match", ["get", "class"], "process", "#d9d3db", "tankyard", "#ddd8de", "basin", C.water, "ash", "#cfd2cf", "coal", "#a9a39b",
           "substation", "#dcd6cc", "plaza", "#e9e4da", "parking", "#e4e0da", "construction", "#ece6d6", "flare", "#e8dcd6", "yard", "#e2dccf",
           "dump", "#cdc3b1", "tailings", "#dcdbd0", "quarry", "#d9d1c4", "dam", "#a29c90", "pitch", "#cfe5c0", "stadium", "#dfe7d5", "park", C.park,
-          "military", "#ebdfdb", "#e3dbe6"] } },
+          "military", "#ebdfdb", "wellpad", "#b9ac95", "#e3dbe6"] } },
       { id: "site-road-case", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
         layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": C.roadCase, "line-width": ["interpolate", ["linear"], ["zoom"], 12.5, 1, 16, ["match", ["get", "class"], "tertiary", 12, 6]] } },
       { id: "site-road", type: "line", source: "lines", "source-layer": "transportation", minzoom: 12.5, filter: ["all", ["has", "over_city"], ["in", ["get", "class"], ["literal", ["service", "tertiary"]]]],
