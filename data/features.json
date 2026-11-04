@@ -2682,6 +2682,21 @@
   "note": "Visitor centre of the Pilgrims' Quarter on Pilgrims' Square at the west end of Pilgrims' Bridge: information, permits for the precinct, guides, left luggage; beside the pilgrim hostels, the refectory and the coach park off the Darvaza street."
  },
  {
+  "id": "museum-of-old-iyik-janyl",
+  "name": "Museum of Old Iyık Janyl",
+  "name_ir": "Eski Iyık Janyl muzeyi",
+  "name_ru": "Музей Старого Ийык-Джаныла",
+  "kind": "museum",
+  "city": "Iyık Janyl",
+  "zone": "ISEZ",
+  "lat": 41.38514,
+  "lon": 72.2306,
+  "elev": 668,
+  "confidence": "placed",
+  "note": "Museum and research centre of the Shar-i-Kuhna ruins in the Pilgrims' Quarter: a long, low building on the garden's north edge, its terrace facing the ruins' fence.",
+  "wiki": null
+ },
+ {
   "id": "diz-i-safid",
   "name": "Diz-i Safid",
   "name_ir": "Diz-i Safid",
