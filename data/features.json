@@ -253,7 +253,8 @@
   "elev": 1250,
   "confidence": "placed",
   "note": "Round 1971-74 concert hall under a ribbed shell (Erkin Sydykbekov), home of the Talas Symphony Orchestra; listed 2021.",
-  "wiki": "Talas Symphony Orchestra"
+  "wiki": "Talas Symphony Orchestra",
+  "web": "https://philharmonic.korkom.org/"
  },
  {
   "id": "talas-opera-ballet",
@@ -268,7 +269,9 @@
   "elev": 1250,
   "confidence": "placed",
   "note": "Soviet-era opera and ballet house (Venera Kasymova prima 1971-90); placed in the Soviet centre.",
-  "wiki": null
+  "wiki": null,
+  "web": "https://talas-opera.korkom.org/",
+  "address": "Theatre Square 1"
  },
  {
   "id": "hyatt-regency-talas",
@@ -1831,7 +1834,8 @@
   "elev": 1720,
   "confidence": "placed",
   "note": "Painter's house-studio and museum at Besh-Tash; canon says \"Besh-Tash (upper valley; Ayyubov museum)\", in the Besh-Tash valley about 2 km above the gorge's bend, 6 km above Kök-Oi at the valley mouth.",
-  "wiki": "Yusup Ayyubov"
+  "wiki": "Yusup Ayyubov",
+  "web": "https://besh-tash.korkom.org/"
  },
  {
   "id": "ishakov-house-museum",
@@ -1846,7 +1850,8 @@
   "elev": 1600,
   "confidence": "placed",
   "note": "Novelist's birthplace museum (2012) and grave in Arsha-Say, below the Talas Alatau in Talas District.",
-  "wiki": "Kemel Ishakov"
+  "wiki": "Kemel Ishakov",
+  "web": "https://ishakov.korkom.org/"
  },
  {
   "id": "kara-suu-canyon",
@@ -6988,7 +6993,9 @@
   "confidence": "placed",
   "note": "Talasfilm's premiere house on Cinema Boulevard, a few doors from the national film archive; since 1996 the Talasfilm Archives' cinematheque.",
   "wiki": null,
-  "locked": true
+  "locked": true,
+  "web": "https://ifs.korkom.org/",
+  "address": "Cinema Boulevard"
  },
  {
   "id": "russian-town-houses-talas",
@@ -7052,7 +7059,9 @@
   "confidence": "placed",
   "note": "The Russian-language drama theatre (Kobozev Russian Drama Theatre before 1992) on the north side of Central Square at the head of Azatlık Prospect; director Veronika Polishchuk; The Cherry Orchard (2012) ran ten seasons.",
   "wiki": null,
-  "locked": true
+  "locked": true,
+  "web": "https://nurzhan-drama.korkom.org/",
+  "address": "Central Square 3"
  },
  {
   "id": "nurzhan-city-hospital-1",
@@ -7463,5 +7472,107 @@
   "wiki": "Qara-Chik Demarcation Line",
   "auto_crossing": true,
   "status": "line"
+ },
+ {
+  "id": "korkom-foundation-office",
+  "name": "Körköm Foundation",
+  "name_ir": "Körköm Fondu",
+  "name_ru": "Фонд «Көркөм»",
+  "kind": "other",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.525544,
+  "lon": 72.2333,
+  "elev": 1250,
+  "confidence": "placed",
+  "note": "Office of the private arts foundation (2011) that funds the Palace of Art and thirteen member bodies, on Coppersmiths' Row in the Old City.",
+  "wiki": null,
+  "address": "Coppersmiths' Row 14, Old City",
+  "web": "https://korkom.org/"
+ },
+ {
+  "id": "ak-zal-talas",
+  "name": "Ak Zal",
+  "name_ir": "Ak Zal",
+  "name_ru": "Ак Зал",
+  "kind": "museum",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.522293,
+  "lon": 72.246548,
+  "elev": 1250,
+  "confidence": "placed",
+  "note": "The Körköm Foundation's contemporary art space (2022): a glass pavilion of one 900 m² room and a mezzanine on Liberty Boulevard; free entry, Thursday Ak Zal Nights.",
+  "wiki": null,
+  "address": "Liberty Boulevard 40",
+  "web": "https://akzal.korkom.org/"
+ },
+ {
+  "id": "irad-state-equestrian-circus",
+  "name": "Irad State Equestrian Circus",
+  "name_ir": "Irad Mamlekettik At Tsirki",
+  "name_ru": "Государственный конный цирк Ирада",
+  "kind": "landmark",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.536042,
+  "lon": 72.28162,
+  "elev": 1245,
+  "confidence": "placed",
+  "note": "Covered ring beside the State Hippodrome, home of the revived dzhigit troupe; summer season.",
+  "wiki": null,
+  "address": "Hippodrome Road",
+  "web": "https://circus.korkom.org/"
+ },
+ {
+  "id": "un-sound-archive",
+  "name": "Ün (sound archive of the National Conservatory)",
+  "name_ir": "Ün, Uluttuk El Muzykasy Konservatoriyasynyn ün arkhivi",
+  "name_ru": "«Үн», звуковой архив Национальной консерватории",
+  "kind": "museum",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.49557,
+  "lon": 72.244364,
+  "elev": 1258,
+  "confidence": "placed",
+  "note": "The conservatory's archive of field recordings since 1967 (1,284 catalogued recordings in seven volumes), across University Street from the National Library.",
+  "wiki": null,
+  "address": "University Street 11",
+  "web": "https://un.korkom.org/"
+ },
+ {
+  "id": "talas-art-college",
+  "name": "Talas Art College named after Yusup Ayyubov",
+  "name_ir": "Yusup Ayyub uulu atyndagy Talas Körköm Kolledji",
+  "name_ru": "Таласское художественное училище имени Юсупа Айюбова",
+  "kind": "school",
+  "city": "Talas",
+  "zone": "ISEZ",
+  "lat": 42.503817,
+  "lon": 72.250745,
+  "elev": 1250,
+  "confidence": "placed",
+  "note": "Art college (1939 as the Talas Art School; named after Ayyubov 1992), about 240 students.",
+  "wiki": null,
+  "address": "Ayyubov Street 7",
+  "web": "https://ayyubov.iradedu.org/"
+ },
+ {
+  "id": "palace-of-art-conservation-workshop",
+  "name": "Conservation Workshop of the Palace of Art",
+  "name_ir": "Körköm Saraiynyn kalybyna keltirüü ustakanasy",
+  "name_ru": "Реставрационная мастерская Дворца искусств",
+  "kind": "other",
+  "city": "Iyık Janyl",
+  "zone": "ISEZ",
+  "lat": 41.39114,
+  "lon": 72.24923,
+  "elev": 810,
+  "confidence": "placed",
+  "note": "Conservation workshop fitted out in 2014 in the Palace's old boiler rooms; free Thursday assessments for parishes and families.",
+  "wiki": null,
+  "address": "Palace of Art",
+  "web": "https://palace-workshop.korkom.org/"
  }
 ]
