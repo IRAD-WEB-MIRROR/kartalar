@@ -2445,6 +2445,21 @@
   "web": "https://saintjanyl.org/"
  },
  {
+  "id": "old-juniper-cathedral-hill",
+  "name": "Old Juniper",
+  "name_ir": "Kart Archa",
+  "name_ru": "Старый можжевельник",
+  "kind": "landmark",
+  "city": "Iyık Janyl",
+  "zone": "ISEZ",
+  "lat": 41.388873,
+  "lon": 72.241039,
+  "elev": 800,
+  "confidence": "placed",
+  "note": "Zeravshan juniper, the oldest living thing on Cathedral Hill, on the pilgrims' rest at the foot of the west stair where the path from the Naryn ends; pilgrims tie white ribbons to it.",
+  "wiki": null
+ },
+ {
   "id": "cathedral-hill",
   "name": "Cathedral Hill",
   "name_ir": "Chirköö Döbösü",

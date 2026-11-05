@@ -5631,7 +5631,7 @@
   "name_ir": "Chirköö Döbösü jolu",
   "name_ru": "Дорога на Соборный холм",
   "kind": "road",
-  "note": "Winding road (~4 km) from State Route 1 in the city up to the cathedral precinct's gate on Cathedral Hill.",
+  "note": "Winding road (~4 km) from State Route 1 in the city up to the cathedral precinct's gate on Cathedral Hill; bollards below the car park entrance close the last stretch to the gate to cars (walkers and emergency vehicles only).",
   "coords": [
    [
     72.23599,
@@ -6210,16 +6210,8 @@
     41.388835
    ],
    [
-    72.244271,
-    41.388826
-   ],
-   [
-    72.244056,
-    41.388754
-   ],
-   [
-    72.243948,
-    41.388709
+    72.244294,
+    41.388827
    ]
   ],
   "coords_lore": [
