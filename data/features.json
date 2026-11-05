@@ -2550,6 +2550,21 @@
   "wiki": "Iyık Janyl Pilgrimage Hostel"
  },
  {
+  "id": "curia-of-the-archeparchy",
+  "name": "Curia of the Archeparchy",
+  "name_ir": "Arkhieparkhiyanyn kuriyasy",
+  "name_ru": "Курия Архиепархии",
+  "kind": "church",
+  "city": "Iyık Janyl",
+  "zone": "ISEZ",
+  "lat": 41.388965,
+  "lon": 72.244404,
+  "elev": 805,
+  "confidence": "placed",
+  "note": "The archeparchy's chancery and archive: two joined two-storey town houses on the Cathedral Hill road just above the han, bought in 2004.",
+  "wiki": null
+ },
+ {
   "id": "st-janyl-bell-tower",
   "name": "Bell tower of St. Janyl",
   "name_ru": "Колокольня церкви Святой Джаныл",
